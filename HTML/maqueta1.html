@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Web Designer | INICIO</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+	    <link rel="stylesheet" type="text/css" href="estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body>
+  		
+  		<header class="hero-image">
+  			<h1>The Web Designer</h1>
+  		</header>
+  	  
+
+  		<nav>
+  			<div class="topnav" id="myTopnav">
+				  <a href="maqueta1.html" class="active">Inicio</a>
+				  <a href="servicios.html">Servicios</a>
+				  <a href="procesos.html">Procesos</a>
+				  <a href="contacto.html">Contacto</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i></a>
+			</div>
+  		</nav>
+
+			
+
+  		<div id="contenedor">
+	  	<section>
+	  		<h2>Bienvenidos</h2>
+	  		<img src="elearning1.jpg">
+	  		<p> Gracias por visitar <strong>Web Designer</strong>. Esta es una página que cuenta con cuatro apartados principales. 
+				En la sección de <strong>Servicios</strong> podrán conocer nuestros productos junto con sus descripciones y precios. 
+				En el apartado de <strong>Procesos</strong> podrán visualizar imágenes que muestran las diferentes etapas de nuestro trabajo. 
+				Por último, en la sección de <strong>Contacto</strong> podrán realizar cualquier consulta o duda que tengan, así como también
+				ubicarnos fácilmente a través de Google Maps.</p>
+	  	</section>
+
+
+	  	<aside>
+	  		<h2>Responsive Design</h2>
+	  		<p>Esta página cuenta con un <strong>diseño responsive</strong>, lo que permite que pueda visualizarse correctamente en cualquier 
+			   tipo de dispositivo, ya sea una PC, notebook, tablet o celular. Gracias a esta adaptación, la experiencia del 
+			   usuario es óptima sin importar el tamaño de la pantalla, garantizando una navegación cómoda, clara y accesible 
+			   en todo momento. </p>
+	  		<img src="imagen1.jpg">
+	  		<p>Utilizamos herramientas y lenguajes como <strong>HTML5, CSS3 y JavaScript</strong> para lograr sitios web dinámicos, rápidos y 
+			   optimizados. De esta manera aseguramos compatibilidad, rendimiento y una correcta visualización en todos los 
+			   navegadores. Nuestro compromiso es crear sitios web visualmente atractivos, fáciles de navegar y totalmente
+			   adaptados a las nuevas tecnologías.</p>
+	  	</aside>
+	  	</div>	
+
+
+
+  		<footer>
+  			<h3> Montevideo, Uruguay </h3>
+  		</footer>
+
+
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+		</script>
+  </body>
+</html>

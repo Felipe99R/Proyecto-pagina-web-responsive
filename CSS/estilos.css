@@ -1,0 +1,429 @@
+	*{
+ 			margin: 0px;
+ 		}
+	
+	
+	body{
+			background-color: black;
+			font-family: "Alan Sans", sans-serif;
+		}
+ 
+
+	header{
+			width: 100%;
+			height: 120px;
+			background-color: lightcoral;
+		}
+
+	nav{
+			width: 100%;
+			height: 50px;
+			background-color: black;
+		}
+
+	section{
+			width: 70%;
+			background-color: lightgreen;
+			float: left;
+		}
+
+	aside{
+			width: 30%;
+			background-color: lightblue;
+			float: right;
+
+		}
+
+	footer{
+			width: 100%;
+			height: 100px;
+			background-color: black;
+			color: white;
+			clear: both;
+		}
+
+
+/*----ESTILOS DE LA PORTADA Y EL CABEZAL----*/
+
+	.hero-image {
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imagen2.jpg");
+	  height: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+	}
+ 		
+ 
+	.unifrakturmaguntia-regular {
+		  font-family: "UnifrakturMaguntia", cursive;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+	h1{
+			font-size: 40px;
+			text-align: center;
+			line-height: 120px ;
+			color: whitesmoke;
+		}
+	h2{
+			font-size: 30px;
+			text-align: center;
+			color: rgb(0, 0, 0);
+			padding:20px;
+		}
+	h3{
+			font-size: 20px;
+			text-align: center;
+			line-height: 100px;
+		}
+
+	img{
+			width: 70%;
+			border-radius: 10px;
+			display:block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+
+	p{
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			margin-bottom: 30px;
+			padding: 20px;
+		
+		}
+
+	
+	aside img {
+ 		    margin-bottom: 30px !important;
+        }
+
+			
+
+	/*-----ELEMENTO DE IGUAL ALTO-----*/
+
+	#contenedor{
+			overflow:hidden;
+		}
+
+	section, aside{
+			padding-bottom: 100%;
+			margin-bottom: -100%;
+		}
+
+
+	/*-----ESTILOS TABLA-----*/
+
+	table{
+		 width: 80%;
+         margin: 20px auto;
+         background-color: grey;
+         border-collapse: collapse;
+         box-sizing: border-box  
+		}
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+	tr:nth-child(odd){background-color: #b7b7b7;}
+    tr:hover {background-color: #ffff99;}
+
+	td, th{
+			width: 25%;
+			height: 20px;
+			border: 1px solid blue;
+			padding: 10px;
+		}
+
+	th{
+			background-color: #33bb77;
+			color: white;
+		}
+
+	#servicios1{
+			margin-bottom: 20px;
+		}
+
+	#servicios2 th{
+			background-color: #ff9933;
+		}
+	.centrar{
+			text-align: center;
+		}
+
+
+	/*-----ESTILOS FORMULARIO-----*/
+
+	form, .mapa {
+			width: 90%;         
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 20px auto;  
+			box-sizing: border-box;
+		}	
+
+	.mapa{
+			height: 376px;
+    		border: 0;
+			display: block;
+	}
+
+
+	label {
+		display: block;
+	}
+
+	textarea{
+		height: 200px;
+		width: 100%;
+	}
+
+	input[type=text] {
+	  width: 100%;
+	  padding: 12px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	}
+
+	input[type=submit] {
+	  width: 100%;
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 14px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+
+/*----ESTILOS MENU DE NAVEGACION----*/
+
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #333333;
+	  display: flex;
+	}
+
+	ul li a {
+	  display: block;
+	  color: white;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	ul li a:hover:not(.active) {
+	  background-color: #111111;
+	}
+
+	ul li a.active {
+	  background-color: #04AA6D;
+	}
+
+
+	/*----ESTILOS SLIDERS PROCESOS----- */
+
+	.mySlides {
+		display: none;
+	}
+		
+	img {
+		vertical-align: middle;
+	}
+
+	/* Slideshow container */
+	.slideshow-container {
+		width: 90%;           
+		max-width: 1000px;
+		position: relative;
+		margin: 20px auto;   
+		box-sizing: border-box;
+	}
+		
+
+	/* Next & previous buttons */
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+		  color: #000000;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+	.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+	/* Fading animation */
+	.fade {
+		  animation-name: fade;
+		  animation-duration: 1.0s;
+		}
+
+	@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next {font-size: 11px}
+		}
+
+
+	.topnav.responsive {
+		position: relative;
+		z-index: 9999;
+		}
+
+		
+	.slideshow-container {
+		position: relative;
+		z-index: 1;
+	   }
+
+
+
+    /*-----ESTILOS DE RESPONSIVE TOP NAV-----*/
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #000000;
+        overflow: hidden;
+       }
+
+	/* Style the links inside the navigation bar */
+	.topnav a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	   }
+
+	/* Change the color of links on hover */
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	   }
+
+	/* Add an active class to highlight the current page */
+	.topnav a.active {
+		background-color: #04AA6D;
+		color: white;
+	}
+
+	/* Hide the link that should open and close the topnav on small screens */
+	.topnav .icon {
+		display: none;
+	}
+
+
+	/*-----REGLAS DE MEDIO-----*/
+
+	@media only screen and (max-width: 900px) {
+	section, aside {
+		width:100%;
+	}
+	}
+
+	/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+	@media screen and (max-width: 900px) {
+	.topnav a {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+  }
+
+	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+	@media screen and (max-width: 900px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+  }
+
+	@media screen and (max-width: 900px) {
+	table {
+		width: 95%;        
+		font-size: 12px;   
+	}
+
+	td, th {
+		padding: 6px;    
+	}
+
+	table img {
+		width: 40px;     
+		height: auto;
+	}
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Designer | CONTACTO</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+  		
+	   <header class="hero-image">
+  			<h1>The Web Designer</h1>
+  	   </header>
+  	  
+  	   <nav>
+  			<div class="topnav" id="myTopnav">
+				  <a href="maqueta1.html">Inicio</a>
+				  <a href="servicios.html" >Servicios</a>
+				  <a href="procesos.html">Procesos</a>
+				  <a href="contacto.html"  class="active">Contacto</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				  </a>
+			</div>
+  	   </nav>
+
+
+  		<div id="contenedor">
+        <section>
+	  		<h2>Contacto</h2>
+            <form action="/action_page.php">
+			<label for="fname">*Nombre y Apellido</label>
+			<input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre y apellido...">
+
+		    <label for="lname">*e-mail</label>
+			<input type="text" id="lname" name="lastname" placeholder="Ingrese su email...">
+
+			<label for="subject">*Consulta</label>
+            <textarea id="subject" name="subject" placeholder="Escriba su consulta..."></textarea>
+					  
+			<input type="submit" value="Enviar">
+			</form>
+
+     		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4627.352913399575!2d-56.160228519335696!3d-34.905630792029996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1762295505225!5m2!1ses!2suy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+	  	<aside>
+	  		<h2>Responsive Design</h2>
+	  		<p>Esta página cuenta con un <strong>diseño responsive</strong>, lo que permite que pueda visualizarse correctamente en cualquier 
+			   tipo de dispositivo, ya sea una PC, notebook, tablet o celular. Gracias a esta adaptación, la experiencia del 
+			   usuario es óptima sin importar el tamaño de la pantalla, garantizando una navegación cómoda, clara y accesible 
+			   en todo momento. </p>
+	  		<img src="imagen1.jpg">
+	  		<p>Utilizamos herramientas y lenguajes como <strong>HTML5, CSS3 y JavaScript</strong> para lograr sitios web dinámicos, rápidos y 
+			   optimizados. De esta manera aseguramos compatibilidad, rendimiento y una correcta visualización en todos los 
+			   navegadores. Nuestro compromiso es crear sitios web visualmente atractivos, fáciles de navegar y totalmente
+			   adaptados a las nuevas tecnologías.</p>
+	  	</aside>
+	  	</div>	
+
+
+  		<footer>
+  			<h3> Montevideo, Uruguay </h3>
+  		</footer>
+
+  		<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+		</script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Web Designer | PROCESOS</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+        
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+  		
+	    <header class="hero-image">
+  			   <h1>The Web Designer</h1>
+  		</header>
+  	  
+
+  		<nav>
+  			<div class="topnav" id="myTopnav">
+				  <a href="maqueta1.html" >Inicio</a>
+				  <a href="servicios.html">Servicios</a>
+				  <a href="procesos.html" class="active">Procesos</a>
+				  <a href="contacto.html">Contacto</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				  </a>
+				</div>
+  		</nav>
+
+			
+
+  		<div id="contenedor">
+	  	<section>
+	  		<h2>Procesos</h2>
+	  		
+		<div class="slideshow-container">
+		    <div class="mySlides fade">
+		    <div class="numbertext">1 / 3</div>
+		    <img src="proceso21.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="proceso24.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="proceso26.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+        </section>
+
+
+	  	<aside>
+	  		<h2>Responsive Design</h2>
+	  		<p>Esta página cuenta con un <strong>diseño responsive</strong>, lo que permite que pueda visualizarse correctamente en cualquier 
+			   tipo de dispositivo, ya sea una PC, notebook, tablet o celular. Gracias a esta adaptación, la experiencia del 
+			   usuario es óptima sin importar el tamaño de la pantalla, garantizando una navegación cómoda, clara y accesible 
+			   en todo momento. </p>
+	  		<img src="imagen1.jpg">
+	  		<p>Utilizamos herramientas y lenguajes como <strong>HTML5, CSS3 y JavaScript</strong> para lograr sitios web dinámicos, rápidos y 
+			   optimizados. De esta manera aseguramos compatibilidad, rendimiento y una correcta visualización en todos los 
+			   navegadores. Nuestro compromiso es crear sitios web visualmente atractivos, fáciles de navegar y totalmente
+			   adaptados a las nuevas tecnologías.</p>
+	  	</aside>
+	  	</div>	
+
+
+  		<footer>
+  			<h3> Montevideo, Uruguay </h3>
+  		</footer>
+
+
+	    <script>
+		/*SLIDERS PROCESOS */
+			let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		}
+
+
+		filterSelection("all") // Execute the function and show all columns
+		function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("column");
+		if (c == "all") c = "";
+		// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+		for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		}
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {
+			element.className += " " + arr2[i];
+			}
+		}
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		}
+		element.className = arr1.join(" ");
+		}
+
+
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+			}
+
+		</script>
+	</body>
+	</html>
